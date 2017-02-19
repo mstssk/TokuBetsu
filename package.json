@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "render": "node scripts/render.js",
+    "css": "node scripts/css.js",
+    "start": "node scripts/live-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/mstssk/tb-tokusetu#readme",
   "dependencies": {
     "fontmin": "^0.9.6",
+    "live-server": "^1.2.0",
     "mustache": "^2.3.0",
     "node-sass": "^4.5.0",
     "typescript": "^2.1.6",
