@@ -4,7 +4,7 @@
   "description": "特設サイト用テンプレート",
   "main": "index.js",
   "scripts": {
-    "render": "node scripts/render.js",
+    "html": "node scripts/html.js",
     "css": "node scripts/css.js",
     "start": "node scripts/live-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
