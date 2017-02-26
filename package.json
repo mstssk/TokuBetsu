@@ -1,11 +1,12 @@
 {
-  "name": "tb-tokusetu",
+  "name": "tokubetsu",
   "version": "0.0.0",
   "description": "特設サイト用テンプレート",
   "main": "index.js",
   "scripts": {
     "html": "node scripts/html.js",
     "css": "node scripts/css.js",
+    "font": "node scripts/font.js",
     "start": "node scripts/live-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +15,7 @@
     "url": "git+https://github.com/mstssk/tb-tokusetu.git"
   },
   "author": "mstssk",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
     "url": "https://github.com/mstssk/tb-tokusetu/issues"
   },
