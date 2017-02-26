@@ -1,1 +1,58 @@
-name: てっくぶーすたー！
+title: てっくぶーすたー！
+canonical_url: https://example.com/foobar
+books: 
+    - id: zunda
+      name: Android Zunda!
+      page: 148
+      price: 1234
+      description: |-
+        ずんだ餅だけがずんだじゃない！
+        食べた瞬間に口の中を暴れまわる枝豆を思い知れ。
+      cover_image: images/zunda.jpg
+      cover:
+        illustrator:
+            name: りんご
+            url: https://mstssk.blogspot.jp/
+        designer:
+            name: 浜村勝太郎
+      chapters:
+        - title: 第1章 ずんだとは
+          author:
+            name: "@mstssk"
+            url: https://twitter.com/mstssk
+        - title: 第2章 餅だけではない
+          author:
+            name: "@mstssk"
+            url: https://twitter.com/mstssk
+        - title: "付録: 海外のずんだ文化"
+
+    - id: imoni
+      name: Web Imoni
+      page: 128
+      price: 1000
+      price_note: たぎる東北イモニ帝国
+      primary_author:
+        name: "primary_author"
+        url: https://example.com/
+      description: |-
+        ずんだ餅だけがずんだじゃない！
+        食べた瞬間に口の中を暴れまわる枝豆を思い知れ。
+      cover_image: images/imoni.jpg
+      cover:
+        illustrator:
+            name: りんご
+        designer:
+            name: 浜村勝太郎
+            url: https://mstssk.blogspot.jp/
+      chapters:
+        - title: はじめに 芋煮とは
+        - title: 第1章 宮城風
+          sections:
+            - 豚肉
+            - 味噌
+        - title: 第2章 山形風
+          sections:
+            - 牛肉
+            - しょうゆ
+            - しめじ
+        - title: しめくくり

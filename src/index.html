@@ -5,9 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="canonical" href="{{{ canonical_url }}}"/>
 </head>
 <body>
-    Hello {{ name }}!
+<h1>Hello {{ title }}!</h1>
+
+{{#books}}
+<div id="{{ id }}" class="container">
+<div class="row">
+    <div class="col-md-5">
+        <img src="{{{ cover_image }}}" class="img-responsive tb-shadow center-block" alt="{{ name }}">
+    </div>
+    <div class="col-md-7">
+        <h2>{{ name }}</h2>
+        <dl class="dl-horizontal">
+          <dt>ページ数</dt>
+          <dd>{{ page }}ページ</dd>
+          <dt>価格</dt>
+          <dd>
+            {{ price }}円
+            （イベント頒布価格{{#price_note}}／{{ . }}{{/price_note}}）
+          </dd>
+          {{#cover}}
+          <dt>表紙</dt>
+          <dd>
+            {{#illustrator}}
+                イラスト: 
+                {{#url}}<a href="{{{ url }}}" target="_blank">{{ name }}</a>{{/url}}
+                {{^url}}{{ name }}{{/url}}
+                {{#designer}}<br>{{/designer}}
+            {{/illustrator}}
+            {{#designer}}
+                デザイン: 
+                {{#url}}<a href="{{{ url }}}" target="_blank">{{ name }}</a>{{/url}}
+                {{^url}}{{ name }}{{/url}}
+            {{/designer}}
+          </dd>
+          {{/cover}}
+          {{#primary_author}}
+          <dt>著者</dt>
+          <dd>
+            {{#url}}<a href="{{{ url }}}" target="_blank">{{ name }}</a>{{/url}}
+            {{^url}}{{ name }}{{/url}}
+          </dd>
+          {{/primary_author}}
+          {{#description}}
+          <dt>内容</dt>
+          <dd>
+            <p style="white-space: pre-line">{{ description }}</p>
+          </dd>
+          {{/description}}
+          <dt>目次</dt>
+          <dd>
+            <ol class="list-unstyled">
+            {{#chapters}}
+              <li>
+                {{ title }}
+                {{#author}}
+                    <p class="tb-author">
+                        {{#url}}<a href="{{{ url }}}" target="_blank">{{ name }}</a>{{/url}}
+                        {{^url}}{{ name }}{{/url}}
+                    </p>
+                {{/author}}
+                {{#sections.length}}
+                    <ol>
+                    {{#sections}}<li>{{ . }}</li>{{/sections}}
+                    </ol>
+                {{/sections.length}}
+              </li>
+            {{/chapters}}
+            </ol>
+          </dd>
+        </dl>
+    </div>
+</div>
+</div>
+<hr>
+{{/books}}
 
 </body>
 </html>
