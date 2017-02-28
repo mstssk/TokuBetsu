@@ -23,6 +23,7 @@
   "homepage": "https://github.com/mstssk/TokuBetsu#readme",
   "dependencies": {
     "fontmin": "^0.9.6",
+    "glob": "^7.1.1",
     "js-yaml": "^3.8.1",
     "live-server": "^1.2.0",
     "mkpath": "^1.0.0",
