@@ -1,5 +1,3 @@
-"use strict";
-
 const liveServer = require("live-server");
 const config = require("../config");
 const packageJson = require("../package.json");

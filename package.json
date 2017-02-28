@@ -2,30 +2,33 @@
   "name": "tokubetsu",
   "version": "0.0.0",
   "description": "特設サイト用テンプレート",
-  "main": "index.js",
   "scripts": {
+    "clean": "node scripts/clean.js",
     "html": "node scripts/html.js",
     "css": "node scripts/css.js",
     "font": "node scripts/font.js",
     "start": "node scripts/live-server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && npm run html && npm run css && npm run font",
+    "test": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mstssk/tb-tokusetu.git"
+    "url": "git+https://github.com/mstssk/TokuBetsu.git"
   },
   "author": "mstssk",
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/mstssk/tb-tokusetu/issues"
+    "url": "https://github.com/mstssk/TokuBetsu/issues"
   },
-  "homepage": "https://github.com/mstssk/tb-tokusetu#readme",
+  "homepage": "https://github.com/mstssk/TokuBetsu#readme",
   "dependencies": {
     "fontmin": "^0.9.6",
     "js-yaml": "^3.8.1",
     "live-server": "^1.2.0",
+    "mkpath": "^1.0.0",
     "mustache": "^2.3.0",
     "node-sass": "^4.5.0",
+    "rimraf": "^2.6.1",
     "typescript": "^2.1.6",
     "typescript-formatter": "^4.1.1"
   }

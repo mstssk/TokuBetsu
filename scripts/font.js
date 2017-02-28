@@ -1,16 +1,15 @@
-"use strict";
-
 const fs = require('fs');
 const Fontmin = require('fontmin');
 const config = require("../config");
 
-let text = fs.readFileSync("src/index.html").toString();
-text += fs.readFileSync("src/data.yml").toString();
+const OUTPUT_DIR = `${config.output}/assets/fonts`;
+require('mkpath').sync(OUTPUT_DIR);
 
+const text = fs.readFileSync(`${config.output}/index.html`, 'utf8');
 const fontmin = new Fontmin()
     .src('src/assets/fonts/*.ttf')
     .use(Fontmin.glyph({ text }))
-    .dest(`${config.output}/fonts`);
+    .dest(OUTPUT_DIR);
 
 fontmin.run(function (err, files) {
     if (err) {
