@@ -7,7 +7,7 @@ require('mkpath').sync(OUTPUT_DIR);
 
 const text = fs.readFileSync(`${config.output}/index.html`, 'utf8');
 const fontmin = new Fontmin()
-    .src('src/assets/fonts/*.ttf')
+    .src('src/fonts/*.ttf')
     .use(Fontmin.glyph({ text }))
     .dest(OUTPUT_DIR);
 
