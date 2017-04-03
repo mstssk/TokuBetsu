@@ -9,6 +9,9 @@ const text = fs.readFileSync(`${config.output}/index.html`, 'utf8');
 const fontmin = new Fontmin()
     .src('src/fonts/*.ttf')
     .use(Fontmin.glyph({ text }))
+    .use(Fontmin.ttf2eot())
+    .use(Fontmin.ttf2svg())
+    .use(Fontmin.ttf2woff())
     .dest(OUTPUT_DIR);
 
 fontmin.run(function (err, files) {
