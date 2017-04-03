@@ -1,9 +1,9 @@
 const config = require("./config");
 const rimraf = require("rimraf");
 const glob = require('glob');
-glob(`${config.output}/**/*`,
-    { ignore: `${config.output}/images/**` },
+glob(`${config.output}/+(assets|index.html)`,
     (err, matches) => {
+        // console.log(matches);
         logError(err);
         matches.forEach(p => rimraf(p, e => logError(e)));
     });
