@@ -1,3 +1,206 @@
+@mixin text_stroke($thin:1px, $color:#666) {
+  text-shadow:
+    (- $thin) (- $thin) $color,
+       $thin  (- $thin) $color,
+    (- $thin)    $thin  $color,
+       $thin     $thin  $color,
+
+    -0px (- $thin) $color,
+     0px (- $thin) $color,
+    -0px    $thin  $color,
+     0px    $thin  $color,
+
+    (- $thin) -0px $color,
+       $thin  -0px $color,
+    (- $thin)  0px $color,
+       $thin   0px $color;
+}
+
+/* * * * * * * * * */
+
+@import 'genshingothic.scss';
+
+.dl-horizontal {
+  dt {
+    width: 60px;
+    float: left;
+    text-align: right;
+    font-weight: 500;
+  }
+  dd {
+    margin-left: 75px;
+  }
+}
+
+.btn {
+  font-weight: 200;
+}
+
 body {
-    font-family: "Gen Shin Gothic", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: 'Gen Shin Gothic', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  position: relative;
+  line-height: 1.71428571;
+  overflow-wrap: break-word;
+}
+
+.first-container {
+  margin-top: 40px;
+}
+
+hr {
+  margin-top: 60px;
+  margin-bottom: 0;
+  + .container,
+  + footer {
+    padding-top: 60px;
+  }
+}
+
+.navbar-brand {
+  font-size: 16pt;
+  img {
+    display: inline-block;
+    vertical-align: sub;
+  }
+}
+.tb-navpad {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    font-size: 9pt;
+  }
+}
+
+header {
+  background: url("../../images/eyecatch.jpg") no-repeat center;
+  background-color: #fefdfa;
+  background-size: cover;
+    margin: 0 auto 0 auto;
+  position: relative;
+
+  // wvでviewport-widthとの比率でヘッダのサイズ調整
+  &.responsive-header{
+    height: 50vw;
+  }
+  min-height: 180px;
+  max-height: 700px;
+
+  @media screen and (max-width: 991px) {
+    background-position: center top;
+  }
+
+  // vwが動かないブラウザ向けfallback
+  @media screen and (min-width:  992px) { height: 620px; }
+  @media screen and (min-width:  768px) { height: 500px; }
+  @media screen and (max-width:  767px) { height: 200px; }
+}
+
+.hero {
+  @media screen and (min-width: 769px) {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    font-size: 5pt;
+  }
+  position: absolute;
+  h1 {
+    font-size: 5em;
+    margin-bottom: 0px;
+  }
+  p {
+    font-size: 1.95em;
+  }
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 30px;
+  .second {
+    color: #888;
+    font-size: 95%;
+    font-weight: 200;
+  }
+}
+
+h3 {
+  font-weight: 200;
+}
+
+footer {
+  padding-bottom: 20px;
+}
+
+.main_text {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 14pt;
+}
+
+.reveal-parent {
+  outline: none;
+  .reveal-revealed {
+    display: none;
+  }
+  &:hover, &:focus {
+    .reveal-default {
+      display: none;
+    }
+    .reveal-revealed {
+      display: block;
+    }
+  }
+}
+.mail-registration {
+  max-width: 500px
+}
+
+.tb-socials {
+  margin-top: 1em;
+  @media screen and (max-width: 767px) {
+    iframe {
+      // iframeが生成される時、一瞬幅が広がって全体のスタイルが崩れるため。
+      max-width: calc(50vw);
+    }
+  }
+}
+.tb-author {
+  padding-left: 1em;
+}
+
+.tb-text-stroke {
+  @include text_stroke(1px, #ffffff);
+}
+.tb-text-stroke_small {
+  @include text_stroke(1px, #ffffff);
+}
+.tb-shadow {
+  -webkit-box-shadow: 0 1px 6px rgba(0,0,0,.35);
+          box-shadow: 0 1px 6px rgba(0,0,0,.35);
+}
+.visible-xxs-inline {
+  display: none;
+  @media screen and (max-width: 460px) {
+    display: inline;
+  }
+}
+.inline-block {
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  .swap-right {
+    float: right;
+  }
+}
+
+// IE,Edgeが改行文字(LF)を出すのでサイズを0にして誤魔化す。
+// サブセット化したWebフォントに改行文字が入ってないと豆腐になる。
+br {
+  font-size: 0;
 }

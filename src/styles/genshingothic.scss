@@ -1,0 +1,84 @@
+/*
+ * 源真ゴシックをNoto Sans Japaneseライクに使えるようにする
+ * 
+ * - 源真ゴシック http://jikasei.me/font/genshin/
+ * - Noto Sans Japanese (japanese) http://www.google.com/fonts/earlyaccess
+ *   https://fonts.googleapis.com/earlyaccess/notosansjapanese.css
+ */
+/* Thin  */
+@font-face {
+    font-family: "Gen Shin Gothic";
+    src: url("../fonts/GenShinGothic-ExtraLight.eot"); /* IE9 */
+    src: url("../fonts/GenShinGothic-ExtraLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GenShinGothic-ExtraLight.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/GenShinGothic-ExtraLight.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/GenShinGothic-ExtraLight.svg#Gen Shin Gothic ExtraLight") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 100;
+}
+/* Light */
+@font-face {
+    font-family: "Gen Shin Gothic";
+    src: url("../fonts/GenShinGothic-Light.eot"); /* IE9 */
+    src: url("../fonts/GenShinGothic-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GenShinGothic-Light.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/GenShinGothic-Light.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/GenShinGothic-Light.svg#Gen Shin Gothic Light") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 200;
+}
+/* DemiLight */
+@font-face {
+    font-family: "Gen Shin Gothic";
+    src: url("../fonts/GenShinGothic-Normal.eot"); /* IE9 */
+    src: url("../fonts/GenShinGothic-Normal.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GenShinGothic-Normal.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/GenShinGothic-Normal.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/GenShinGothic-Normal.svg#Gen Shin Gothic Normal") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 300;
+}
+/* Regular */
+@font-face {
+    font-family: "Gen Shin Gothic";
+    src: url("../fonts/GenShinGothic-Regular.eot"); /* IE9 */
+    src: url("../fonts/GenShinGothic-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GenShinGothic-Regular.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/GenShinGothic-Regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/GenShinGothic-Regular.svg#Gen Shin Gothic Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 400;
+}
+/* Medium */
+@font-face {
+    font-family: "Gen Shin Gothic";
+    src: url("../fonts/GenShinGothic-Medium.eot"); /* IE9 */
+    src: url("../fonts/GenShinGothic-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GenShinGothic-Medium.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/GenShinGothic-Medium.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/GenShinGothic-Medium.svg#Gen Shin Gothic Medium") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 500;
+}
+/* Bold */
+@font-face {
+    font-family: "Gen Shin Gothic";
+    src: url("../fonts/GenShinGothic-Bold.eot"); /* IE9 */
+    src: url("../fonts/GenShinGothic-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GenShinGothic-Bold.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/GenShinGothic-Bold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/GenShinGothic-Bold.svg#Gen Shin Gothic Bold") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 700;
+}
+/* Black */
+@font-face {
+    font-family: "Gen Shin Gothic";
+    src: url("../fonts/GenShinGothic-Heavy.eot"); /* IE9 */
+    src: url("../fonts/GenShinGothic-Heavy.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/GenShinGothic-Heavy.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/GenShinGothic-Heavy.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/GenShinGothic-Heavy.svg#Gen Shin Gothic Heavy") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 900;
+}
