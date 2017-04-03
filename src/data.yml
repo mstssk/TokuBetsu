@@ -1,13 +1,14 @@
 head_title: てっくぶーすたー！
 head_desc: descriptionです
 og_image: https://example.com/foobar/image/foobar.png
+canonical_url: https://example.com/foobar
 
 copyright_year: 2017
 copyright_text: Hogeサークル
 copyright_url: https://example.com
 
 title: てっくぶーすたー！
-canonical_url: https://example.com/foobar
+hero_desc: コミックマーケットXX N日目(20XX/XX/XX) 北あ-99ab
 books: 
     - id: zunda
       name: Android Zunda!
