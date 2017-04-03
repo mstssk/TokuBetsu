@@ -3,8 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>test</title>
+    <title>{{ head_title }}</title>
+    <meta name="description" content="{{{ head_desc }}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph / Twitter Card -->
+    <meta property="og:title" content="{{{ head_title }}}">
+    <meta property="og:site_name" content="{{{ head_title }}}">
+    <meta property="og:description" content="{{ head_desc }}">
+    <meta property="og:url" content="{{{ canonical_url }}}">
+    <meta property="og:image" content="{{{ og_image }}}">
+    <meta property="og:type" content="website">
 
     <!-- bootstrap css/js -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
