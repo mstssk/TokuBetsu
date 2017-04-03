@@ -28,9 +28,58 @@
     <link rel="canonical" href="{{{ canonical_url }}}"/>
 </head>
 <body>
+
+<!-- Socials -->
+<script src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0" async></script>
+<script src="//apis.google.com/js/plusone.js" async></script>
+<script src="//b.st-hatena.com/js/bookmark_button.js" async></script>
+<script src="//platform.twitter.com/widgets.js" async></script>
+
 <h1>Hello {{ title }}!</h1>
 
 <div class="container">
+
+<!-- Place -->
+<div class="row">
+    <div class="col-md-3"><!--spacer--></div>
+    <div class="col-md-6">
+        <h3 class="text-center">{{ title }}</h3>
+        <p class="main_text text-center">
+        any messages!
+        </p>
+    </div>
+    <div class="col-md-3"><!--spacer--></div>
+</div>
+
+<!-- Share -->
+<div class="row">
+    <ul class="text-center list-inline tb-socials">
+        <li>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+        </li>
+        <li>
+            <a href="http://b.hatena.ne.jp/entry/{{{ canonical_url }}}"
+                class="hatena-bookmark-button" data-hatena-bookmark-layout="simple-balloon"
+                                                title="このエントリーをはてなブックマークに追加">
+                <img src="//b.st-hatena.com/images/entry-button/button-only@2x.png"
+                        alt="このエントリーをはてなブックマークに追加"
+                        width="20" height="20" style="border: none;">
+            </a>
+        </li>
+        <br class="visible-xxs-inline">
+        <li style="position:relative;top:-7px;">
+            <div class="fb-like" data-share="true"
+                data-layout="button_count" data-width="100"
+                data-show-faces="false" data-href="{{{ canonical_url }}}"></div>
+        </li>
+        <li>
+            <div class="g-plusone" data-size="medium"></div>
+        </li>
+    </ul>
+</div>
+
+<hr>
+
 {{#books}}
 <div id="{{ id }}" class="row">
     <div class="col-md-5 {{{ __swap_right__ }}}">
