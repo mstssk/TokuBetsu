@@ -7,9 +7,9 @@
     "html": "node scripts/html.js",
     "css": "node scripts/css.js",
     "font": "node scripts/font.js",
-    "js": "node scripts/js.js",
+    "copy": "node scripts/copy.js",
     "start": "node scripts/live-server.js",
-    "build": "npm run js && npm run html && npm run css && npm run font",
+    "build": "npm run copy && npm run html && npm run css && npm run font",
     "test": "npm run build"
   },
   "repository": {

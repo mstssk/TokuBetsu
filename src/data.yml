@@ -16,7 +16,7 @@ books:
       description: |-
         ずんだ餅だけがずんだじゃない！
         食べた瞬間に口の中を暴れまわる枝豆を思い知れ。
-      cover_image: images/zunda.jpg
+      cover_image: assets/images/cover_dummy.png
       cover:
         illustrator:
             name: りんご
@@ -45,7 +45,7 @@ books:
       description: |-
         ずんだ餅だけがずんだじゃない！
         食べた瞬間に口の中を暴れまわる枝豆を思い知れ。
-      cover_image: images/imoni.jpg
+      cover_image: assets/images/cover_dummy.png
       cover:
         illustrator:
             name: りんご
