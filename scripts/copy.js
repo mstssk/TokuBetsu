@@ -1,6 +1,6 @@
 const fs = require("fs");
 const glob = require("glob");
-const config = require("../config");
+const config = require("./config");
 
 const files = glob.sync('src/+(images|js)/*');
 files.forEach(file => {

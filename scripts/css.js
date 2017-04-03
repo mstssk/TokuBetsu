@@ -1,6 +1,6 @@
 const fs = require('fs');
 const sass = require('node-sass');
-const config = require("../config");
+const config = require("./config");
 
 const OUTPUT_DIR = `${config.output}/assets`;
 require('mkpath').sync(OUTPUT_DIR);

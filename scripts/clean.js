@@ -1,4 +1,4 @@
-const config = require("../config");
+const config = require("./config");
 const rimraf = require("rimraf");
 const glob = require('glob');
 glob(`${config.output}/**/*`,

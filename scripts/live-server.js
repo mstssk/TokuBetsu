@@ -1,5 +1,5 @@
 const liveServer = require("live-server");
-const config = require("../config");
+const config = require("./config");
 const packageJson = require("../package.json");
 
 const mountPath = `/${packageJson.name}/`;

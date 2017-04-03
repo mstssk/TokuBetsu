@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Fontmin = require('fontmin');
-const config = require("../config");
+const config = require("./config");
 
 const OUTPUT_DIR = `${config.output}/assets/fonts`;
 require('mkpath').sync(OUTPUT_DIR);

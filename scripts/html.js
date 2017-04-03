@@ -1,7 +1,7 @@
 const fs = require("fs");
 const yaml = require("js-yaml");
 const mustache = require("mustache");
-const config = require("../config");
+const config = require("./config");
 
 require('mkpath').sync(config.output);
 
