@@ -8,7 +8,7 @@
     "css": "node scripts/css.js",
     "font": "node scripts/font.js",
     "start": "node scripts/live-server.js",
-    "build": "npm run clean && npm run html && npm run css && npm run font",
+    "build": "npm run html && npm run css && npm run font",
     "test": "npm run build"
   },
   "repository": {
