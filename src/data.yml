@@ -37,6 +37,7 @@ books:
 
     - id: imoni
       name: Web Imoni
+      abbr_name: Imoni
       page: 128
       price: 1000
       price_note: たぎる東北イモニ帝国
