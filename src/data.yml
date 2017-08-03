@@ -42,9 +42,11 @@ books:
       page: 128
       price: 1000
       price_note: たぎる東北イモニ帝国
-      primary_author:
-        name: "primary_author"
-        url: https://example.com/
+      primary_authors:
+        - name: "Author 1"
+          url: https://example.com/
+        - name: "Author 2"
+          url: https://example.com/
       description: |-
         ずんだ餅だけがずんだじゃない！
         食べた瞬間に口の中を暴れまわる枝豆を思い知れ。

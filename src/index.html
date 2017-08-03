@@ -155,13 +155,19 @@
             {{/designer}}
           </dd>
           {{/cover}}
-          {{#primary_author}}
+          {{#primary_authors.length}}
           <dt>著者</dt>
           <dd>
-            {{#url}}<a href="{{{ url }}}" target="_blank">{{ name }}</a>{{/url}}
-            {{^url}}{{ name }}{{/url}}
+            <ul class="list-unstyled">
+              {{#primary_authors}}
+              <li>
+                  {{#url}}<a href="{{{ url }}}" target="_blank">{{ name }}</a>{{/url}}
+                  {{^url}}{{ name }}{{/url}}
+              </li>
+              {{/primary_authors}}
+            </ul>
           </dd>
-          {{/primary_author}}
+          {{/primary_authors.length}}
           {{#description}}
           <dt>内容</dt>
           <dd>
